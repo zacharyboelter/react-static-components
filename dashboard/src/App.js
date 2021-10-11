@@ -1,22 +1,22 @@
 
-import './styles.css';
+
 import NavBar from './components/NavBar';
 import Rating from './components/Rating';
 import Reviews from './components/Reviews';
 import Sentiment from './components/Sentiment';
 import Visitors from './components/Visitors';
-
+import './styles.css';
 
 
 
 const App = () => {
   return (
-    <div className='container'>
-      <h4 className='navbar'><NavBar /></h4>
-      <h4 className='reviews'><Reviews /></h4>
-      <h4 className='rating'> <Rating /></h4>
-      <h4 className='sentiment'><Sentiment /> </h4>
-      <h4 className='visitors'><Visitors /></h4>
+    <div className="parent">
+      <h4 className="div1"><NavBar /></h4>
+      <h4 className="div2"><Reviews /></h4>
+      <h4 className="div3"> <Rating /></h4>
+      <h4 className="div4"><Sentiment /> </h4>
+      <h4 className="div5"><Visitors /></h4>
     </div>
   )
 }
