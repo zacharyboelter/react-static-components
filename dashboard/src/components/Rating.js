@@ -1,6 +1,6 @@
 const Rating = (props) => {
     return (
-        <div id='overview_card'>
+        <div>
             Average Rating
             <br />
             4.6

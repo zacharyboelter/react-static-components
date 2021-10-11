@@ -1,4 +1,4 @@
-App {
+/* App {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -59,7 +59,7 @@ div {
 
 #main {
     grid-area: main;
-    background-color: floralwhite;
+    background-color: ;
    
 }
 #main_overview {
@@ -80,4 +80,44 @@ div {
     border: 1px solid darkblue;
     border-radius: 4px;
     color: darkblue;
+} */
+
+div {
+	border: 1px solid grey;
+	margin: 5px;
+	padding: 5px;
+	
+}
+
+.conatiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border-radius: 4px;
+}
+
+.navbar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1;
+    background-color: lightgray;
+}
+
+.reviews {
+    grid-column-start: 4;
+    grid-column-end: 2;
+    grid-row: 1;
+    background-color: lightgray;
+}
+
+.rating {
+    grid: 3, 1, 4, 2;
+}
+
+.sentiment {
+    grid: 4, 1, 5, 2;
+}
+
+.visitors {
+    grid: 2, 2, 5, 4;
 }

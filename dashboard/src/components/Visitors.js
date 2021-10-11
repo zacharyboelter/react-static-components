@@ -1,6 +1,6 @@
 const Visitors = (props) => {
     return (
-        <div id='header'>
+        <div>
             Website Visitors
             <br />
            821

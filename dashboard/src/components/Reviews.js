@@ -1,6 +1,6 @@
 const Reviews = (props) => {
     return (
-        <div id='overview_card'>
+        <div>
             Reviews
             <br />
             1,281

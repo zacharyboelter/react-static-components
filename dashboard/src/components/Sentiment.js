@@ -1,6 +1,6 @@
 const Sentiment = (props) => {
     return (
-        <div id='overview_card'>
+        <div>
             Sentiment Analysis
             <br />
             <ul id='sentiment-list'>
