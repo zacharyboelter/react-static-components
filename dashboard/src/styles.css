@@ -1,0 +1,82 @@
+App {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 1rem;
+  }
+
+
+.container {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas: 
+        'aside header'
+        'aside main'
+        'aside main';
+    height: 100vh;    
+}
+
+
+  
+div {
+	border: 1px solid grey;
+	margin: 5px;
+	padding: 5px;
+	
+}
+
+#header {
+    grid-area: header;
+    background-color: darkgrey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+#aside {
+    grid-area: aside;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#aside-list {
+    padding: 0;
+    margin-top: 85px;
+    list-style-type: none;
+}
+
+#aside_list-item {
+    padding: 20px 20px 20px 40px;
+    color: #ddd;
+}
+#aside_list-item:hover {
+    background-color: royalblue;
+    cursor: pointer;
+}
+
+#main {
+    grid-area: main;
+   
+}
+#main_overview {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid lightgreen;
+}
+#overview_card {
+    flex-basis: 250px;
+    flex-grow: 1;
+    margin: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100px;
+    border: 1px solid darkblue;
+    border-radius: 4px;
+    color: darkblue;
+}
